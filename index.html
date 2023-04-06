@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meal Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>The Meal Planner</h1>
+        </div>
+        
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="intro">
+            <h2>Plan Your Meals for the Week</h2>
+            <p>The Meal Planner is a web-based application that helps you plan your meals for the week. Select your dietary preferences, choose from a list of recipes, and generate a weekly meal plan.</p>
+            <a href="#" class="btn">Get Started</a>
+        </section>
+
+        <!-- Dietary Preferences and Restrictions Section -->
+        <section class="preferences">
+            <h3>Select Your Dietary Preferences and Restrictions</h3>
+            <form action="#" method="post">
+                <label for="vegan">Vegan</label>
+                <input type="checkbox" name="preferences" id="vegan" value="vegan">
+                <label for="vegetarian">Vegetarian</label>
+                <input type="checkbox" name="preferences" id="vegetarian" value="vegetarian">
+                <label for="gluten-free">Gluten-Free</label>
+                <input type="checkbox" name="preferences" id="gluten-free" value="gluten-free">
+            </form>
+        </section>
+
+        <!-- Recipe Database Section -->
+        <section class="recipes">
+            <h3>Recipe Database</h3>
+            <form action="#" method="get">
+                <input type="text" name="search" placeholder="Search for recipes...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="recipe-cards">
+                <!-- Recipe cards will be dynamically generated here -->
+            </div>
+        </section>
+
+        <!-- Meal Plan Generator Section -->
+        <section class="generator">
+            <h3>Generate Your Weekly Meal Plan</h3>
+            <form action="#" method="post">
+                <label for="days">Number of Days:</label>
+                <select name="days" id="days">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7" selected>7</option>
+                </select>
+                <br>
+                <label for="randomize">Randomize:</label>
+                <input type="checkbox" name="randomize" id="randomize" value="randomize">
+                <br>
+                <button type="submit">Generate</button>
+            </form>
+        </section>
+
+        <!-- Customizable Meal Plan Section -->
+        <section class="customizable">
+            <h3>Customize Your Meal Plan</h3>
+            <div class="meal-plan">
+                <!-- The generated meal plan will be dynamically generated here -->
+            </div>
+            <div class="options">
+                <button>Add Meal</button>
+                <button>Remove Meal</button>
+            </body>
+</html>
+
