@@ -21,6 +21,7 @@ h1 {
   font-style: oblique;
   color: antiquewhite;
   text-align: center;
+  font-family: Lucida Handwriting;
 }
 
 /* Main Content */
@@ -39,6 +40,7 @@ h2 {
   font-size: 24px;
   margin-bottom: 20px;
   color: chocolate;
+  font-weight: bolder;
 }
 
 form {
