@@ -20,22 +20,7 @@ body {
     font-style: oblique;
     color: antiquewhite;
   }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
+
   /* Main Content */
   main {
     max-width: 800px;
