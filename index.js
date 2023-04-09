@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded",()=>{
     dietaryPrefrences()
+    getRecipes()
 })
 
 // Function to set dietary prefrences
@@ -36,3 +37,12 @@ const dietaryPrefrences =()=>{
   form.reset();
     })
 }
+// GET request for recipes
+
+const getRecipes = async(url)=>{
+  const response = await fetch(url):
+  const recipes = await response.json()
+  renderRecipes(recipes);
+}
+// Function to render recipes after searching
+renderRecipes
