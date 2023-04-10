@@ -122,5 +122,21 @@ function renderRecipeCard(result, type) {
     mealPlanCards.appendChild(recipeCard);
   }
 }
+
+// Function to search similar recipes
+function getSimilarRecipes(recipeId) {
+  let url = `https://api.spoonacular.com/recipes/${recipeId}/similar?apiKey=${apiKey}`;
+  clearRecipeCards();
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach((result) => {
+        // Call reuasble render recipe card function
+        renderRecipeCard(result, "search");
+      });
+      recipeCards.classList.remove("loader");
+    })
+    .catch((error) => console.log(error));
+}
 })
 
