@@ -26,6 +26,7 @@ This application was built using:
 To use this application, simply open the index.html file in a web browser.
 
 ## Functions
+
 ### clearRecipeCards()
 This function clears all the recipe cards from the search results section.
 
