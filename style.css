@@ -1,8 +1,12 @@
+html {
+  min-height: 100%;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: burlywood;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStIDE86FvI1BukF7FQpgYPUnAajwQ2RfpMyQ&usqp=CAU);
+  min-height: 100%;
 }
 
 /* Header */
@@ -29,7 +33,9 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStIDE86FvI1BukF7FQpgYPUnAajwQ2RfpMyQ&usqp=CAU);
+  background-color: ghostwhite;
+  opacity: 0.97;
+  min-height: 100%;
 }
 
 section {
@@ -79,11 +85,12 @@ button[type="submit"] {
 }
 
 .recipe-card {
-  background-color: #f1f1f1;
+  background-color: wheat;
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 5px;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .recipe-card img {
@@ -110,10 +117,16 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+.recipe-card a {
+  color: royalblue;
+}
+
 .customizable {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .meal-plan {
@@ -135,3 +148,31 @@ button[type="submit"] {
 .options button:first-of-type {
   margin-right: 10px;
 }
+.two-columns {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 5px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+button{
+  margin: 5px;
+}
+
+

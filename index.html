@@ -1,72 +1,72 @@
-
- <!DOCTYPE html>
- <html>
-   <head>
-     <title>The Meal Planner</title>
-     <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-     <header>
-       <h1>The Meal Planner</h1>
-     </header>
-     <main>
-       <section>
-         <h2>Select Your Dietary Preferences</h2>
-         <form>
-           <label for="diet">Diet:</label>
-           <select id="diet">
-             <option value="">Select a diet</option>
-             <option value="vegetarian">Vegetarian</option>
-             <option value="vegan">Vegan</option>
-             <option value="gluten-free">Gluten-free</option>
-           </select>
-           <label for="restrictions">Restrictions:</label>
-           <input type="text" id="restrictions" placeholder="Enter any dietary restrictions">
-           <button type="submit">Save Preferences</button>
-         </form>
-       </section>
-       <section>
-         <h2>Recipe Database</h2>
-         <form>
-           <label for="search">Search for recipes:</label>
-           <input type="text" id="search" placeholder="Enter a keyword">
-           <button type="submit">Search</button>
-         </form>
-         <div class="recipe-cards">
-           <div class="recipe-card">
-             <h3>Recipe Title</h3>
-             <img src="recipe-image.jpg" alt="Recipe Image">
-             <p>Recipe description goes here.</p>
-             <button>Add to My Plan</button>
-           </div>
-           <div class="recipe-card">
-             <h3>Recipe Title</h3>
-             <img src="recipe-image.jpg" alt="Recipe Image">
-             <p>Recipe description goes here.</p>
-             <button>Add to My Plan</button>
-           </div>
-           <div class="recipe-card">
-             <h3>Recipe Title</h3>
-             <img src="recipe-image.jpg" alt="Recipe Image">
-             <p>Recipe description goes here.</p>
-             <button>Add to My Plan</button>
-           </div>
-         </div>
-       </section>
-       <section>
- <!-- Customizable Meal Plan Section -->
-        <section class="customizable">
-            <h3>Customize Your Meal Plan</h3>
-            <div class="meal-plan">
-                <!--The generated meal plan will be dynamically generated here-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Meal Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>The Meal Planner</h1>
+    </header>
+    <main>
+      <!--Section to select Dietary Preferences-->
+      <section>
+        <h2>Select Your Dietary Preferences</h2>
+        <form id="selection">
+          <label for="diet">Diet:</label>
+          <select id="diet">
+            <option value="">Select a diet</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="gluten-free">Gluten-free</option>
+          </select>
+          <label for="restrictions">Restrictions:</label>
+          <input
+            type="text"
+            id="restrictions"
+            placeholder="Enter any dietary restrictions"
+          />
+        </form>
+      </section>
+     <!--Search section-->
+      <section>
+        <h2>Recipe Database</h2>
+        <form id="recipes">
+          <label for="search">Search for recipes:</label>
+          <input
+            type="text"
+            id="search"
+            placeholder="Enter a keyword"
+          />
+          <button id="btnSearch" type="submit">Search</button>
+        </form>
+      </section>
+      <div class="two-columns">
+        <div>
+          <section class="customizable">
+            <h3>search results</h3>
+            <div id="recipe-cards">
+            <!--Search card template-->
+              <!--  <div class="recipe-card">
+            <h3 id="title">Recipe Title</h3>
+             <img id="picture" src="" alt="Recipe Image">
+             <button id="add">Add to My Plan</button>
+           </div>-->
             </div>
-            <div class="options">
-                <button>Add Meal</button>
-                <button>Remove Meal</button>
-                <script>/src/index.js</script>
-            </body>
+          </section>
+        </div>
+        <div>
+          <!-- Customizable Meal Plan Section -->
+          <section class="customizable">
+            <h3>Customize Your Meal Plan</h3>
+            <div id="meal-plan">
+              <!--The generated meal plan will be dynamically generated here-->
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
- 
- 
- 
- 
