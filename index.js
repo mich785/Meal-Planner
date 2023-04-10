@@ -16,5 +16,30 @@ function clearRecipeCards() {
   // add loader to recipecards
   recipeCards.classList.add("loader");
 }
+// Event listener for search form submission
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const query = searchInput.value.trim();
+  const diet = dietInput.value;
+  const restrictions = restrictionsInput.value;
+  let url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${query}&number=9`;
+  if (diet) {
+    url += `&diet=${diet}`;
+  }
+  if (restrictions) {
+    url += `&intolerances=${restrictions}`;
+  }
+  clearRecipeCards();
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      data.results.forEach((result) => {
+        renderRecipeCard(result, "search");
+      });
+      recipeCards.classList.remove("loader");
+    })
+    .catch((error) => console.log(error));
+});
+
 })
 
