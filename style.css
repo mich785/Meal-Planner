@@ -78,12 +78,6 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-.recipe-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-
 .recipe-card {
   background-color: wheat;
   border: 1px solid #ccc;
@@ -102,10 +96,6 @@ button[type="submit"] {
 .recipe-card h3 {
   margin-top: 0;
   font-style: italic;
-}
-
-.recipe-card p {
-  margin-bottom: 10px;
 }
 
 .recipe-card button {
